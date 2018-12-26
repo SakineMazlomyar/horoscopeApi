@@ -5,8 +5,8 @@
     if($_SESSION['horoscopeAndDate']){
 
         echo "true";
-        echo $_SESSION['horoscopeAndDate'];
-        return;
+echo $_SESSION['horoscopeAndDate'];
+                return;
     }
     $databasJson = file_get_contents("horoscopes.json");
     // we make an empty objectOfDatabs
