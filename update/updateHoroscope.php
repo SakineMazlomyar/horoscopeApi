@@ -13,14 +13,39 @@ session_start();
 $updateHoroscope = isset($_POST['updateHoroscope']);
 if($updateHoroscope){
     unset($_SESSION['horoscopeAndDate']);
-
-   
     
+
+    $databasJson = file_get_contents("../add/horoscopes.json");
+    $databas = json_decode($databasJson);
+
     $updatedValue = $_PUT['date'];
-    $_SESSION['horoscopeAndDate'] =  $updatedValue;
+    $montheOfBirth = substr($updatedValue,5,2);
+    $dayOfBirth= substr($updatedValue,8);
+    
+    
+    foreach($databas->horoscope as $horoscope){
+        
+        //we loop throw first month in horoscope array and compare day and first month
+        for($s=0; $s<count($horoscope->amountDaysOfFirstMonth); $s++){
+            if($horoscope->amountDaysOfFirstMonth[$s] == $dayOfBirth && $horoscope->firstMonth == $montheOfBirth){
+                
+                $_SESSION['horoscopeAndDate'] =  $horoscope->nameHoroscope . $updatedValue . $horoscope->pictureHoroscope;
+                echo$_SESSION['horoscopeAndDate'];
+                return;
+            }
+        }
+            //we loop throw second month in horoscope array and compare days and second month
+        for($j=0; $j<count($horoscope->amountDaysOfsecondMonth); $j++){
+            if($horoscope->amountDaysOfsecondMonth[$j] == $dayOfBirth && $horoscope->secondMonth == $montheOfBirth){
+                $_SESSION['horoscopeAndDate'] =  $horoscope->nameHoroscope .  $updatedValue . $horoscope->pictureHoroscope;
+                echo$_SESSION['horoscopeAndDate'];
+                return;
+            }
+        }
+}
     
 
-    echo$_SESSION['horoscopeAndDate'];
+    
 }
 
 
