@@ -1,13 +1,13 @@
 
 
 <?php
-    session_start();
-    if($_SESSION['horoscopeAndDate']){
-
-        echo "true";
-echo $_SESSION['horoscopeAndDate'];
-                return;
-    }
+session_start();
+if(isset($_SESSION['horoscopeAndDate'])){
+    echo "true";
+    echo $_SESSION['horoscopeAndDate'];
+    return;
+    
+}else{
     $databasJson = file_get_contents("horoscopes.json");
     // we make an empty objectOfDatabs
     $databas = json_decode($databasJson);
@@ -27,20 +27,28 @@ echo $_SESSION['horoscopeAndDate'];
                 if($horoscope->amountDaysOfFirstMonth[$s] == $dayOfBirth && $horoscope->firstMonth == $montheOfBirth){
                     
                     $_SESSION['horoscopeAndDate'] =  $horoscope->nameHoroscope . $dateOfBirth . $horoscope->pictureHoroscope;
-                    echo$_SESSION['horoscopeAndDate'];
+                    return;
+                    //echo$_SESSION['horoscopeAndDate'];
                     
                 }
             }
-             //we loop throw second month in horoscope array and compare days and second month
+                //we loop throw second month in horoscope array and compare days and second month
             for($j=0; $j<count($horoscope->amountDaysOfsecondMonth); $j++){
                 if($horoscope->amountDaysOfsecondMonth[$j] == $dayOfBirth && $horoscope->secondMonth == $montheOfBirth){
                     $_SESSION['horoscopeAndDate'] =  $horoscope->nameHoroscope . $dateOfBirth . $horoscope->pictureHoroscope;
+                    //echo$_SESSION['horoscopeAndDate'];
                     return;
                 }
             }
+        }
     }
-
     
 }
+    
+    
+        
+    
+    
+    
           
 ?>
