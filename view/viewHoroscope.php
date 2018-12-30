@@ -6,15 +6,19 @@ fall skriva ut det i output. Annars ska sidan inte skriva ut någonting -->
 <?php
     
     
-   function existSesstion(){
-       
-       //fråga om hur jag ska inkludera get eller är mening jämföra input med session och view 
-       session_start();
-       if($_SESSION['horoscopeAndDate']){
-   
-           echo $_SESSION['horoscopeAndDate'];
-       }
-   }
-   existSesstion()
+    
+session_start();
+
+if(isset($_SESSION['horoscopeAndDate'])){
+
+    echo $_SESSION['horoscopeAndDate'];
+    
+}else{
+
+    echo"";
+}
+
+
+  
 ?>
 </div>
