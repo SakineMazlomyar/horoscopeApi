@@ -8,10 +8,10 @@ ska sidan inte uppdatera något och skriva ut false -->
 
 <?php
 parse_str(file_get_contents("php://input"), $_PUT);
-session_start();
 
 $updateHoroscope = isset($_POST['updateHoroscope']);
 if($updateHoroscope){
+    session_start();
     unset($_SESSION['horoscopeAndDate']);
     
 
@@ -30,7 +30,7 @@ if($updateHoroscope){
             if($horoscope->amountDaysOfFirstMonth[$s] == $dayOfBirth && $horoscope->firstMonth == $montheOfBirth){
                 
                 $_SESSION['horoscopeAndDate'] =  $horoscope->nameHoroscope . $updatedValue . $horoscope->pictureHoroscope;
-                echo$_SESSION['horoscopeAndDate'];
+                echo "true";
                 return;
             }
         }
@@ -38,7 +38,7 @@ if($updateHoroscope){
         for($j=0; $j<count($horoscope->amountDaysOfsecondMonth); $j++){
             if($horoscope->amountDaysOfsecondMonth[$j] == $dayOfBirth && $horoscope->secondMonth == $montheOfBirth){
                 $_SESSION['horoscopeAndDate'] =  $horoscope->nameHoroscope .  $updatedValue . $horoscope->pictureHoroscope;
-                echo$_SESSION['horoscopeAndDate'];
+                echo "true";
                 return;
             }
         }
