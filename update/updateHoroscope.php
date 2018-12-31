@@ -1,10 +1,4 @@
-<!--  updateHoroscope.php sidan ska bara gå att begära via PUT,  
-den ska kolla efter ett födelsedatum i PUT datan, det finns ingen inbyggd $_PUT 
-men ni kan skapa den själva genom att köra denna raden längst upp 
-i filen:parse_str(file_get_contents("php://input"), $_PUT);räkna ut 
-vilket horoskop födelsedatumet tillhör och uppdaterade det sparade horoskopet 
-som finns i $_SESSION och skriva ut true.Om inget horoskop finns i $_SESSION 
-ska sidan inte uppdatera något och skriva ut false -->
+
 
 <?php
 parse_str(file_get_contents("php://input"), $_PUT);
@@ -30,16 +24,22 @@ if($updateHoroscope){
             if($horoscope->amountDaysOfFirstMonth[$s] == $dayOfBirth && $horoscope->firstMonth == $montheOfBirth){
                 
                 $_SESSION['horoscopeAndDate'] =  $horoscope->nameHoroscope . $updatedValue . $horoscope->pictureHoroscope;
-                echo "true";
+                header("Content-Type: application/json");
+                $result = true;
+                echo json_encode($result);
                 return;
+                
             }
         }
             //we loop throw second month in horoscope array and compare days and second month
         for($j=0; $j<count($horoscope->amountDaysOfsecondMonth); $j++){
             if($horoscope->amountDaysOfsecondMonth[$j] == $dayOfBirth && $horoscope->secondMonth == $montheOfBirth){
                 $_SESSION['horoscopeAndDate'] =  $horoscope->nameHoroscope .  $updatedValue . $horoscope->pictureHoroscope;
-                echo "true";
+                header("Content-Type: application/json");
+                $result = true;
+                echo json_encode($result);
                 return;
+            
             }
         }
 }
