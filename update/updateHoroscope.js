@@ -3,11 +3,11 @@ $(document).ready(function(){
     $(".update").click(function(event){
       event.preventDefault();
       
-        console.log("this is update")
+      
         $.ajax({
             type:'post',
             dataType:'json',
-            url:'index.php',
+            url:'./update/updateHoroscope.php',
             data:$(this).serialize(),
             success: function(data){
         
