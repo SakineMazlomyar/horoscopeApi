@@ -7,16 +7,15 @@ $(document).ready(function(){
         $.ajax({
             type:'post',
             dataType:'json',
-            url:'index.php',
+            url:'./add/addHoroscope.php',
             data:$(this).serialize(),
             success: function(data){
         
+                if(data){
                     console.log(data)
-                /* if(data.success){
-                    console.log(data.success)
                 }else{
-                    console.log('no mail')
-                } */
+                    console.log('ingen data')
+                }
             },
             error: function(data, error) {
                 console.log( data +  error)
