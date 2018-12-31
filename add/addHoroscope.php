@@ -4,7 +4,8 @@
 session_start();
 if(isset($_SESSION['horoscopeAndDate'])){
     header("Content-Type: application/json");
-    echo json_encode(true);
+    $result = true;
+    echo json_encode($result);
     return;
     
 }else{
@@ -27,7 +28,10 @@ if(isset($_SESSION['horoscopeAndDate'])){
                 if($horoscope->amountDaysOfFirstMonth[$s] == $dayOfBirth && $horoscope->firstMonth == $montheOfBirth){
                     
                     $_SESSION['horoscopeAndDate'] =  $horoscope->nameHoroscope . $dateOfBirth . $horoscope->pictureHoroscope;
-                    return true;
+                    header("Content-Type: application/json");
+                    $result = true;
+                    echo json_encode($result);
+                    return;
                     
                     
                 }
@@ -36,8 +40,11 @@ if(isset($_SESSION['horoscopeAndDate'])){
             for($j=0; $j<count($horoscope->amountDaysOfsecondMonth); $j++){
                 if($horoscope->amountDaysOfsecondMonth[$j] == $dayOfBirth && $horoscope->secondMonth == $montheOfBirth){
                     $_SESSION['horoscopeAndDate'] =  $horoscope->nameHoroscope . $dateOfBirth . $horoscope->pictureHoroscope;
+                    header("Content-Type: application/json");
+                    $result = true;
+                    echo json_encode($result);
                    
-                    return true;
+                    return;
                 }
             }
         }
