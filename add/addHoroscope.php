@@ -3,8 +3,8 @@
 <?php
 session_start();
 if(isset($_SESSION['horoscopeAndDate'])){
-    echo "true";
-    echo $_SESSION['horoscopeAndDate'];
+    header("Content-Type: application/json");
+    echo json_encode(true);
     return;
     
 }else{
@@ -27,8 +27,8 @@ if(isset($_SESSION['horoscopeAndDate'])){
                 if($horoscope->amountDaysOfFirstMonth[$s] == $dayOfBirth && $horoscope->firstMonth == $montheOfBirth){
                     
                     $_SESSION['horoscopeAndDate'] =  $horoscope->nameHoroscope . $dateOfBirth . $horoscope->pictureHoroscope;
-                    return;
-                    //echo$_SESSION['horoscopeAndDate'];
+                    return true;
+                    
                     
                 }
             }
@@ -36,8 +36,8 @@ if(isset($_SESSION['horoscopeAndDate'])){
             for($j=0; $j<count($horoscope->amountDaysOfsecondMonth); $j++){
                 if($horoscope->amountDaysOfsecondMonth[$j] == $dayOfBirth && $horoscope->secondMonth == $montheOfBirth){
                     $_SESSION['horoscopeAndDate'] =  $horoscope->nameHoroscope . $dateOfBirth . $horoscope->pictureHoroscope;
-                    //echo$_SESSION['horoscopeAndDate'];
-                    return;
+                   
+                    return true;
                 }
             }
         }
