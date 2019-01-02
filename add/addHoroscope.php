@@ -33,7 +33,10 @@ if(isset($_SESSION['horoscopeAndDate'])){
                 
                 
             }
+         
+            
         }
+ 
             //we loop throw second month in horoscope array and compare days and second month
         for($j=0; $j<count($horoscope->amountDaysOfsecondMonth); $j++){
             if($horoscope->amountDaysOfsecondMonth[$j] == $dayOfBirth && $horoscope->secondMonth == $montheOfBirth){
@@ -45,6 +48,10 @@ if(isset($_SESSION['horoscopeAndDate'])){
             }
         }
     }
+    //when there is no such date
+    $result = false;
+    echo json_encode($result);
+    return; 
     
     
 }
