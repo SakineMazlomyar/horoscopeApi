@@ -12,6 +12,7 @@ session_start();
 if(isset($_SESSION['horoscopeAndDate'])){
 
     echo $_SESSION['horoscopeAndDate'];
+    //unset ($_SESSION['horoscopeAndDate']);
     
 }else{
 
