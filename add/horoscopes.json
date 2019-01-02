@@ -7,8 +7,7 @@
         "secondMonth": 1,
         "nameSecondMonth": "januari",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
-        "nameHoroscope":"stenbocken",
-        "pictureHoroscope":"<img src='./pics/get.jpg' style=width:5em;>"
+        "nameHoroscope":"stenbocken"
         },
         {"firstMonth": 1,
         "nameFirstMonth": "januari",
@@ -16,8 +15,7 @@
         "secondMonth": 2,
         "nameSecondMonth": "februari",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
-        "nameHoroscope":"vattenumannen",
-        "pictureHoroscope":"<img src='./pics/11.png' style=width:5em;>"
+        "nameHoroscope":"vattenumannen"
         },
         {"firstMonth": 2,
         "nameFirstMonth": "februari",
@@ -25,8 +23,7 @@
         "secondMonth": 3,
         "nameSecondMonth": "mars",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20],
-        "nameHoroscope":"fiskarna",
-        "pictureHoroscope":"<img src='./pics/fiskar.jpg' style=width:5em;>"
+        "nameHoroscope":"fiskarna"
         },
         {"firstMonth": 3,
         "nameFirstMonth": "mars",
@@ -34,8 +31,7 @@
         "secondMonth": 4,
         "nameSecondMonth": "april",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19],
-        "nameHoroscope":"väduren",
-        "pictureHoroscope":"<img src='./pics/vaduren.png' style=width:5em;>"
+        "nameHoroscope":"väduren"
         },
         {"firstMonth": 4,
         "nameFirstMonth": "april",
@@ -43,8 +39,7 @@
         "secondMonth": 5,
         "nameSecondMonth": "maj",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20],
-        "nameHoroscope":"oxen",
-        "pictureHoroscope":"<img src='./pics/oxen.jpg' style=width:5em;>"
+        "nameHoroscope":"oxen"
         },
         {"firstMonth": 5,
         "nameFirstMonth": "maj",
@@ -52,8 +47,7 @@
         "secondMonth": 6,
         "nameSecondMonth": "juni",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20,21],
-        "nameHoroscope":"tvillingar",
-        "pictureHoroscope":"<img src='./pics/tvillingar.png' style=width:5em;>"
+        "nameHoroscope":"tvillingar"
         },
         {"firstMonth": 6,
         "nameFirstMonth": "juni",
@@ -61,8 +55,7 @@
         "secondMonth": 7,
         "nameSecondMonth": "juli",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20,21,22],
-        "nameHoroscope":"kraften",
-        "pictureHoroscope":"<img src='./pics/kraften.png' style=width:5em;>"
+        "nameHoroscope":"kraften"
         },
         {"firstMonth": 7,
         "nameFirstMonth": "juli",
@@ -70,8 +63,7 @@
         "secondMonth": 8,
         "nameSecondMonth": "augusti",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20,21,22],
-        "nameHoroscope":"lejon",
-        "pictureHoroscope":"<img src='./pics/lejon.jpg' style=width:5em;>"
+        "nameHoroscope":"lejon"
         },
         {"firstMonth": 8,
         "nameFirstMonth": "augusti",
@@ -79,8 +71,7 @@
         "secondMonth": 9,
         "nameSecondMonth": "september",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20,21,22],
-        "nameHoroscope":"jungfrun",
-        "pictureHoroscope":"<img src='./pics/jungfrun.jpg' style=width:5em;>"
+        "nameHoroscope":"jungfrun"
         },
         {"firstMonth": 9,
         "nameFirstMonth": "september",
@@ -88,8 +79,7 @@
         "secondMonth": 10,
         "nameSecondMonth": "october",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20,21,22],
-        "nameHoroscope":"vågen",
-        "pictureHoroscope":"<img src='./pics/vagen.png' style=width:5em;>"
+        "nameHoroscope":"vågen"
         },
         {"firstMonth": 10,
         "nameFirstMonth": "october",
@@ -97,8 +87,7 @@
         "secondMonth": 11,
         "nameSecondMonth": "november",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20,21],
-        "nameHoroscope":"skorpion",
-        "pictureHoroscope":"<img src='./pics/skorpion.jpg' style=width:5em;>"
+        "nameHoroscope":"skorpion"
         },
         {"firstMonth": 11,
         "nameFirstMonth": "november",
@@ -106,8 +95,7 @@
         "secondMonth": 12,
         "nameSecondMonth": "december",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20,21],
-        "nameHoroscope":"skytten",
-        "pictureHoroscope":"<img src='./pics/skytten.jpg' style=width:5em;>"
+        "nameHoroscope":"skytten"
         }
 
     ]
