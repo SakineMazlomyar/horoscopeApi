@@ -10,8 +10,9 @@
         <script src="./add/addHoroscope.js"></script>
         <script src="./update/updateHoroscope.js"></script>
         <script src="./delete/deleteHoroscope.js"></script>
+        <script src="./view/viewHoroscope.js"></script>
     </head>
-    <body>
+    <body onload="content()">
       
         <form id="formInfo">
             <label>Skriv ditt födelsenummer:</label><br>
@@ -24,10 +25,8 @@
 
     
        </form><br>
-
-       <?php
-        include("./view/viewHoroscope.php")
-       ?>
+        <div>
+        </div>
  
         
     </body>
