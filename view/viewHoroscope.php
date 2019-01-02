@@ -1,25 +1,24 @@
-<!-- viewHoroscope.php sidan ska bara gå att begära via GET, 
- den ska kolla om ett horoskop finns sparat i $_SESSION och i så 
-fall skriva ut det i output. Annars ska sidan inte skriva ut någonting -->
 
-<div>
+
 <?php
     
     
     
 session_start();
-
+header("Content-Type: application/json");
 if(isset($_SESSION['horoscopeAndDate'])){
 
-    echo $_SESSION['horoscopeAndDate'];
+    $result = true;
+    echo json_encode($result);
     //unset ($_SESSION['horoscopeAndDate']);
+    return;
     
 }else{
-
-    echo"";
+    $result = false;
+    echo json_encode($result);
+    return;
 }
 
 
   
 ?>
-</div>
