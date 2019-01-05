@@ -1,4 +1,3 @@
-
 function saveHoroscope(url){
     var data= $("#formInfo").serialize();
     console.log(data)
@@ -10,7 +9,7 @@ function saveHoroscope(url){
         success: function(dat){
     
             if(dat){
-                console.log(dat)
+                content()
             }else{
                 console.log('ingen data')
             }
@@ -22,4 +21,5 @@ function saveHoroscope(url){
 
 }
 
-    
+
+   
