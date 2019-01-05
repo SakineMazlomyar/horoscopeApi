@@ -1,6 +1,7 @@
 
 
 <?php
+    
 session_start();
 header("Content-Type: application/json");
 
@@ -12,8 +13,11 @@ if(isset($_SESSION['horoscopeAndDate'])){
 }else{
   
     $dateOfBirth = $_POST['dateBirth'];
+    
     $montheOfBirth = substr($dateOfBirth,5,2);
     $dayOfBirth= substr($dateOfBirth,8); 
+
+    
     
     $databasJson = file_get_contents("./horoscopes.json");
     $databas = json_decode($databasJson);
