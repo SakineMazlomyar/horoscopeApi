@@ -8,8 +8,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   
         <script src="./add/addHoroscope.js"></script>
-        <script src="./update/updateHoroscope.js"></script>
         <script src="./delete/deleteHoroscope.js"></script>
+        <script src="./update/updateHoroscope.js"></script>
         <script src="./view/viewHoroscope.js"></script>
     </head>
     <body onload="content()">
@@ -20,14 +20,14 @@
           
             <button type="button" name="addHoroscope" onclick="saveHoroscope('./add/addHoroscope.php')">Spara mitt horoskop</button><br>
             <button type="button" name="updateHoroscope" onclick="updateHoroscopeContent('./update/updateHoroscope.php')">Uppdatera mitt horoskop</button><br>
-<!--             <input type="submit" class="update" name="updateHoroscope" formaction="./update/updateHoroscope.php" value="uppdatera mitt horoskop"><br>
-            <input type="submit" class="delete" name="deleteHoroscope" formaction="./delete/deleteHoroscope.php" value="Radera mitt horoskop"><br> -->
+            <button type="button" name="deleteHoroscope" onclick="deleteHoroscopeContent('./delete/deleteHoroscope.php')">Radera mitt horoskop</button>
+
 
     
        </form><br>
         <div>
         </div>
- 
+
         
     </body>
 </html>
