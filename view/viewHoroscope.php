@@ -8,13 +8,13 @@ session_start();
 header("Content-Type: application/json");
 if(isset($_SESSION['horoscopeAndDate'])){
 
-    $result = true;
-    echo json_encode($result);
+    
+    echo json_encode($_SESSION['horoscopeAndDate']);
     //unset ($_SESSION['horoscopeAndDate']);
     return;
     
 }else{
-    $result = false;
+    $result = "";
     echo json_encode($result);
     return;
 }
