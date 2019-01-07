@@ -10,9 +10,9 @@ function deleteHoroscopeContent(url){
             if(deletedData){
 
                   
-                content()
                 var div = document.querySelector("div");
                 div.innerHTML= deletedData;
+                content()
 
             }
         },
