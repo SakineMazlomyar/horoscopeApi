@@ -1,9 +1,6 @@
 function deleteHoroscopeContent(url){
-    
-  
+
     var formInfo= $("#formInfo").serialize();
-   
-  
     $.ajax({
         type:'delete',
         dataType: 'json',
@@ -23,5 +20,7 @@ function deleteHoroscopeContent(url){
             console.log( userData +  error)
         }
     });
+
+    return false;
 
 }
