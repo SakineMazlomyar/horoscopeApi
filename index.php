@@ -17,15 +17,13 @@
         <form id="formInfo">
             <label>Skriv ditt födelsenummer:</label><br>
             <input type="date" name="dateBirth"><br>
-          
-            <button type="button" name="addHoroscope" onclick="saveHoroscope('./add/addHoroscope.php')">Spara mitt horoskop</button><br>
-            <button type="button" name="updateHoroscope" onclick="updateHoroscopeContent('./update/updateHoroscope.php')">Uppdatera mitt horoskop</button><br>
-            <button type="button" name="deleteHoroscope" onclick="deleteHoroscopeContent('./delete/deleteHoroscope.php')">Radera mitt horoskop</button>
+        
+            <input type="submit" value="save" onclick="return saveHoroscope('./add/addHoroscope.php')">
+            <input type="submit" value="update" onclick="return updateHoroscopeContent('./update/updateHoroscope.php')">
+            <input type="submit" value="delete" onclick="return deleteHoroscopeContent('./delete/deleteHoroscope.php')">
 
-
-    
        </form><br>
-        <div>
+        <div id="content">
         </div>
 
         
