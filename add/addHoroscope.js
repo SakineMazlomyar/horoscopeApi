@@ -11,13 +11,15 @@ function saveHoroscope(url){
             if(dat){
                 content()
             }else{
-                console.log('ingen data')
+                console.log('there is no such date')
             }
         },
         error: function(dat, error) {
             console.log( dat +  error)
         }
     });
+
+    return false;
 
 }
 
