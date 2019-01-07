@@ -10,12 +10,15 @@ function updateHoroscopeContent(url){
         success: function(dat){
     
             if (dat) {
-                content()
-                var div = document.querySelector("div");
+                var div = document.querySelector("div#content");
                 div.innerHTML= dat;
-
+                content()
+                
             } else {
-                console.log('there is no such date');
+                var div = document.querySelector("div#content");
+                div.innerHTML= dat;
+                content()
+               
             }
         },
         error: function(dat, error) {
