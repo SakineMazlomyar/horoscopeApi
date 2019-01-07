@@ -10,17 +10,16 @@ function displayInformation(div){
         dataType:'json',
         data: $(this).serialize(),
         url:'./view/viewHoroscope.php',
-        success: function(dat){
-            
-            if(dat){
+        success: function(sessionAdded){
+            if(sessionAdded){
               
-               h4.innerText = dat;
+               h4.innerText = sessionAdded;
             }else{
-                h4.innerText = dat
+                h4.innerText = sessionAdded
             }
         },
-        error: function(dat, error) {
-            console.log( dat +  error)
+        error: function(sessionAdded, error) {
+            console.log( sessionAdded +  error)
         }
     });
 
