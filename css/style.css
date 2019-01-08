@@ -1,0 +1,10 @@
+form{
+    width: 30%;
+    position: relative;
+    margin-top: 5em;
+    margin: auto;  
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    
+}
