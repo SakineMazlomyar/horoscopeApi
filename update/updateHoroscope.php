@@ -1,59 +1,69 @@
 
 <?php   
 
-
-
-
 header("Content-Type: application/json");
 parse_str(file_get_contents('php://input'), $_PUT);
 session_start();
-$method = $_SERVER['REQUEST_METHOD'];
 
-if('PUT' == $method){
-    if(isset( $_SESSION['horoscopeAndDate'])){
-        unset($_SESSION['horoscopeAndDate']);
-        $databasJson = file_get_contents("../add/horoscopes.json");
-        $databas = json_decode($databasJson);
+if(!isset($_SESSION['horoscopeAndDate'])){
+    // We check if there is not session to update and print out false
+    $result = false;
+    echo json_encode($result);
+    return;
+    
+}else{
+    if(isset($_PUT['dateBirth'])){
+        
         $dateOfBirth = $_PUT['dateBirth'];
+        
+        
         $montheOfBirth = substr($dateOfBirth,5,2);
         $dayOfBirth= substr($dateOfBirth,8); 
-    
+        
+        
+        
+        $databasJson = file_get_contents("../add/horoscopes.json");
+        $databas = json_decode($databasJson);
+        
+        
         
         foreach($databas->horoscope as $horoscope){
             
-            //we loop throw first month in horoscope array and compare day and first month
+            //we loop throw first month in horoscope array and compare the day and the first month with the databirth
             for($s=0; $s<count($horoscope->amountDaysOfFirstMonth); $s++){
                 if($horoscope->amountDaysOfFirstMonth[$s] == $dayOfBirth && $horoscope->firstMonth == $montheOfBirth){
-                    
                     $_SESSION['horoscopeAndDate'] =  $horoscope->nameHoroscope . $dateOfBirth;
-    
+                    
                     $result = true;
                     echo json_encode($result);
                     return;
+                    
                     
                 }
+             
+                
             }
-                //we loop throw second month in horoscope array and compare days and second month
+     
+                //we loop throw second month in horoscope array and compare the day and the second month with the datebirth
             for($j=0; $j<count($horoscope->amountDaysOfsecondMonth); $j++){
                 if($horoscope->amountDaysOfsecondMonth[$j] == $dayOfBirth && $horoscope->secondMonth == $montheOfBirth){
-                    $_SESSION['horoscopeAndDate'] =  $horoscope->nameHoroscope . $dateOfBirth;
-                
+                    $_SESSION['horoscopeAndDate'] =  $horoscope->nameHoroscope . $dateOfBirth ;
                     $result = true;
                     echo json_encode($result);
                     return;
-                
+                    
                 }
             }
         }
-
-    } else {
-        $result = false;
+        //when we can not updae the horoscope(when we do not have the date in data)
+        // we print out the same session and a message
+        $result = "Choose another date. There is no horoscope for this date.";
         echo json_encode($result);
         return; 
+        
     }
-
-
+    
+    
 }
-
 
 ?>
