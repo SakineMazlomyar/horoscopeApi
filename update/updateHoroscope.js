@@ -7,25 +7,21 @@ function updateHoroscopeContent(url){
         dataType:'json',
         url:'./update/updateHoroscope.php',
         data: data,
-        success: function(dat){
-    
+        success: (dat) => {
             if (dat) {
                 var div = document.querySelector("div#content");
                 div.innerHTML= dat;
                 content()
-                
+
             } else {
                 var div = document.querySelector("div#content");
                 div.innerHTML= dat;
-                content()
-        
-               
+                content() 
             }
         },
-        error: function(dat, error) {
-            console.log( dat +  error)
-        }
+        error:(dat, error) => {console.log( dat +  error)}
     });
+    //To stop form from submitting
     return false;
 }
  
