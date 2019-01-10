@@ -14,6 +14,10 @@ function deleteHoroscopeContent(url){
                 div.innerHTML= deletedData;
                 content()
 
+            }else{
+                var div = document.querySelector("div");
+                div.innerHTML= deletedData;
+                content()
             }
         },
         error: function(userData, error) {
