@@ -11,6 +11,7 @@ if(!isset($_SESSION['horoscopeAndDate'])){
     echo json_encode($result);
     return;
     
+    //we check if there is and when it is we get the date by put and update the session with this data
 }else{
     if(isset($_PUT['dateBirth'])){
         
