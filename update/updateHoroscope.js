@@ -18,6 +18,7 @@ function updateHoroscopeContent(url){
                 var div = document.querySelector("div#content");
                 div.innerHTML= dat;
                 content()
+        
                
             }
         },
