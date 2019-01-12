@@ -4,18 +4,23 @@ function content(){
     
 }
 function displayInformation(div){
-    var h4= document.createElement("h1");
+    var h1 = document.createElement("h1");
     $.ajax({
         type:'get',
         dataType:'json',
         data: $(this).serialize(),
         url:'./view/viewHoroscope.php',
-        success: function(sessionAdded){
-            if(sessionAdded){
-              
-               h4.innerText = sessionAdded;
+        success: function(session){
+            if(session){
+               h1.innerText = session;
+               disapearAddButton()
+               displayDeleteButton()
+               displayUpdateButton()
             }else{
-                h4.innerText = sessionAdded
+                h1.innerText = session
+                displayAddButton()
+                disapearDeleteButton()
+                disapearUpdateButton()
             }
         },
         error: function(sessionAdded, error) {
@@ -23,6 +28,31 @@ function displayInformation(div){
         }
     });
 
-    div.appendChild(h4)
+    div.appendChild(h1)
 
+}
+
+function displayAddButton(){
+    var addButton = document.querySelector("input#add");
+    addButton.style.display = "block"
+}
+function disapearAddButton(){
+    var addButton = document.querySelector("input#add");
+    addButton.style.display = "none"
+}
+function disapearDeleteButton(){
+    var addButton = document.querySelector("input#delete");
+    addButton.style.display = "none"
+}
+function disapearUpdateButton(){
+    var addButton = document.querySelector("input#update");
+    addButton.style.display = "none"
+}
+function displayDeleteButton(){
+    var addButton = document.querySelector("input#delete");
+    addButton.style.display = "block"
+}
+function displayUpdateButton(){
+    var addButton = document.querySelector("input#update");
+    addButton.style.display = "block"
 }
