@@ -19,9 +19,9 @@
             <label>Skriv ditt födelsenummer:</label>
             <input type="date" name="dateBirth">
         
-            <input type="submit" value="save" onclick="return saveHoroscope('./add/addHoroscope.php')">
-            <input type="submit" value="update" onclick="return updateHoroscopeContent('./update/updateHoroscope.php')">
-            <input type="submit" value="delete" onclick="return deleteHoroscopeContent('./delete/deleteHoroscope.php')">
+            <input id="add" type="submit" value="save" onclick="return saveHoroscope('./add/addHoroscope.php')">
+            <input id="update" type="submit" value="update" onclick="return updateHoroscopeContent('./update/updateHoroscope.php')">
+            <input id="delete" type="submit" value="delete" onclick="return deleteHoroscopeContent('./delete/deleteHoroscope.php')">
 
        </form><br>
         <div id="content">
