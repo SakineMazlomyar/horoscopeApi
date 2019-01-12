@@ -13,8 +13,8 @@ function saveHoroscope(url){
                 content()
             }else{
                 var div = document.querySelector("div#content");
+
                 div.innerHTML = dat;
-                alert("There is no sush horoscope. Choose another date")
                 content()
             }
         },
