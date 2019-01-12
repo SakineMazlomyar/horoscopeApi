@@ -24,3 +24,4 @@ function deleteHoroscopeContent(url){
     return false;
 
 }
+
