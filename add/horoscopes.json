@@ -7,7 +7,8 @@
         "secondMonth": 1,
         "nameSecondMonth": "januari",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
-        "nameHoroscope":"stenbocken"
+        "nameHoroscope":"stenbocken",
+        "text": "Du är en väldigt lat person"
         },
         {"firstMonth": 1,
         "nameFirstMonth": "januari",
@@ -15,7 +16,9 @@
         "secondMonth": 2,
         "nameSecondMonth": "februari",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
-        "nameHoroscope":"vattenumannen"
+        "nameHoroscope":"vattenumannen",
+        "text": "Du är en öppen person"
+
         },
         {"firstMonth": 2,
         "nameFirstMonth": "februari",
@@ -23,7 +26,8 @@
         "secondMonth": 3,
         "nameSecondMonth": "mars",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20],
-        "nameHoroscope":"fiskarna"
+        "nameHoroscope":"fiskarna",
+        "text": "Du är en snabb person"
         },
         {"firstMonth": 3,
         "nameFirstMonth": "mars",
@@ -31,7 +35,8 @@
         "secondMonth": 4,
         "nameSecondMonth": "april",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19],
-        "nameHoroscope":"väduren"
+        "nameHoroscope":"väduren",
+        "text": "Du är en snäll person"
         },
         {"firstMonth": 4,
         "nameFirstMonth": "april",
@@ -39,7 +44,8 @@
         "secondMonth": 5,
         "nameSecondMonth": "maj",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20],
-        "nameHoroscope":"oxen"
+        "nameHoroscope":"oxen",
+        "text": "Du är en arg person"
         },
         {"firstMonth": 5,
         "nameFirstMonth": "maj",
@@ -47,7 +53,8 @@
         "secondMonth": 6,
         "nameSecondMonth": "juni",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20,21],
-        "nameHoroscope":"tvillingar"
+        "nameHoroscope":"tvillingar",
+        "text": "Du är en kärleksfull person"
         },
         {"firstMonth": 6,
         "nameFirstMonth": "juni",
@@ -55,7 +62,8 @@
         "secondMonth": 7,
         "nameSecondMonth": "juli",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20,21,22],
-        "nameHoroscope":"kraften"
+        "nameHoroscope":"kraften",
+        "text": "Du är en elak person"
         },
         {"firstMonth": 7,
         "nameFirstMonth": "juli",
@@ -63,7 +71,8 @@
         "secondMonth": 8,
         "nameSecondMonth": "augusti",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20,21,22],
-        "nameHoroscope":"lejon"
+        "nameHoroscope":"lejon",
+        "text": "Du är en mystisk person"
         },
         {"firstMonth": 8,
         "nameFirstMonth": "augusti",
@@ -71,7 +80,8 @@
         "secondMonth": 9,
         "nameSecondMonth": "september",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20,21,22],
-        "nameHoroscope":"jungfrun"
+        "nameHoroscope":"jungfrun",
+        "text": "Du är en girlly person"
         },
         {"firstMonth": 9,
         "nameFirstMonth": "september",
@@ -79,7 +89,8 @@
         "secondMonth": 10,
         "nameSecondMonth": "october",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20,21,22],
-        "nameHoroscope":"vågen"
+        "nameHoroscope":"vågen",
+        "text": "Du är en obalans person"
         },
         {"firstMonth": 10,
         "nameFirstMonth": "october",
@@ -87,7 +98,8 @@
         "secondMonth": 11,
         "nameSecondMonth": "november",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20,21],
-        "nameHoroscope":"skorpion"
+        "nameHoroscope":"skorpion",
+        "text": "Du är en hatere person"
         },
         {"firstMonth": 11,
         "nameFirstMonth": "november",
@@ -95,7 +107,8 @@
         "secondMonth": 12,
         "nameSecondMonth": "december",
         "amountDaysOfsecondMonth":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20,21],
-        "nameHoroscope":"skytten"
+        "nameHoroscope":"skytten",
+        "text": "Du är en målriktad person"
         }
 
     ]
