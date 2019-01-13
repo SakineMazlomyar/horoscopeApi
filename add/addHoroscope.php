@@ -15,7 +15,7 @@ $dateOfBirth = $_POST['dateBirth'];
     print_r($dateOfBirth); */
     return;
     
-}else{
+} else {
     if(isset($_POST['dateBirth'])){
 
         $dateOfBirth = $_POST['dateBirth'];
@@ -33,10 +33,10 @@ $dateOfBirth = $_POST['dateBirth'];
         
         foreach($databas->horoscope as $horoscope){
             
-            //we loop throw first month in horoscope array and compare the day and the first month with the databirth
+            //we loop throw first month(array) in the horoscope and compare the day and the first month with the databirth
             for($s=0; $s<count($horoscope->amountDaysOfFirstMonth); $s++){
                 if($horoscope->amountDaysOfFirstMonth[$s] == $dayOfBirth && $horoscope->firstMonth == $montheOfBirth){
-                    $_SESSION['horoscopeAndDate'] =  $horoscope->nameHoroscope . $dateOfBirth;
+                    $_SESSION['horoscopeAndDate'] =  $horoscope->nameHoroscope . ": ". $horoscope->text;
                     
                     $result = true;
                     echo json_encode($result);
@@ -51,7 +51,7 @@ $dateOfBirth = $_POST['dateBirth'];
                 //we loop throw second month in horoscope array and compare the day and the second month with the datebirth
             for($j=0; $j<count($horoscope->amountDaysOfsecondMonth); $j++){
                 if($horoscope->amountDaysOfsecondMonth[$j] == $dayOfBirth && $horoscope->secondMonth == $montheOfBirth){
-                    $_SESSION['horoscopeAndDate'] =  $horoscope->nameHoroscope . $dateOfBirth ;
+                    $_SESSION['horoscopeAndDate'] =  $horoscope->nameHoroscope . ": ". $horoscope->text;
                     $result = true;
                     echo json_encode($result);
                     return;
