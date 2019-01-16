@@ -59,10 +59,6 @@ $dateOfBirth = $_POST['dateBirth'];
                 }
             }
         }
-        //when we can not count the horoscope(when we do not have the date in data) and can not be saved
-        $result = false;
-        echo json_encode($result);
-        return; 
     }
     
     
