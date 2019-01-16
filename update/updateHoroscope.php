@@ -56,11 +56,6 @@ if(!isset($_SESSION['horoscopeAndDate'])){
                 }
             }
         }
-        //when we can not updae the horoscope(when we do not have the date in data)
-        // we print out the same session and a message
-        $result = "Choose another date. There is no horoscope for this date.";
-        echo json_encode($result);
-        return; 
         
     }
     
