@@ -7,9 +7,6 @@ if(isset($_SESSION['horoscopeAndDate'])){
     // We check if there is alreay a saved horoscope and prevent it to rewrite.
     $result = true;
     echo json_encode($result);
-/* test for outout
-$dateOfBirth = $_POST['dateBirth'];
-    print_r($dateOfBirth); */
     return;
     
 } else {
