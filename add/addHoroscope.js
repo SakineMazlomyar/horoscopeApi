@@ -22,7 +22,7 @@ function saveHoroscope(url){
     });
 
 
-    //to stop form from submitting
+    //To stop form from submitting
     return false;
 
 }
