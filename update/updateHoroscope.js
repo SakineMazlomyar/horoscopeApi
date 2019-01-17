@@ -1,7 +1,7 @@
 
 function updateHoroscopeContent(url){
     var data= $("#formInfo").serialize();
-    console.log(data)
+    //console.log(data)
     $.ajax({
         type:'put',
         dataType:'json',
